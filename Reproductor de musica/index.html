@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" height="100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <title>Reproductor de Musica</title>
+  </head>
+
+  <body class="body">
+    <!-- player -->
+    <main class="player">
+      <!--Title-->
+      <section class="titulo-section">
+        <h1 class="title" id="titulo">Pro Music</h1>
+      </section>
+
+      <!--Covers-->
+
+      <img src="img/default.jpg" alt="" class="cover" id="cover" />
+
+      <!--Elemento de audio-->
+
+      <audio src="" id="audio"></audio>
+
+      <!--Volumen-->
+      <div>
+        <button class="volume-icon"><i class="fas fa-volume-up"></i></button>
+        <div class="volume-container">
+          <section class="slider-cont">
+            <section id="volume-slider"></section>
+          </section>
+        </div>
+      </div>
+
+      <!--Barra de progreso-->
+      <div id="progress-container" class="progress-container">
+        <section class="progress"></section>
+        <span class="time-info"></span>
+      </div>
+      <p class="progress-seg"></p>
+      <p class="audio-duration"></p>
+      <!--controls-->
+
+      <section class="controls">
+        <button class="prev">
+          <i class="fas fa-backward"></i>
+        </button>
+
+        <button class="play" value="play">
+          <i class="fas fa-play" id="play-pause"></i>
+        </button>
+        <button class="stop">
+          <i class="fas fa-stop"></i>
+        </button>
+
+        <button class="foll" id="following">
+          <i class="fas fa-forward"></i>
+        </button>
+      </section>
+
+      <!--Song list-->
+
+      <ul class="songs" id="songs"></ul>
+    </main>
+
+    
+    <script src="js/cargarTapaDisco.js"></script>
+    <script src="js/cambiarColoresDePlayer.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/barraDeProgreso.js"></script>
+    <script src="js/cargaCanción.js"></script>
+    <script src="js/cargarCanciónSigYAnt.js"></script>
+    <script src="js/cargarTitulo.js"></script>
+    <script src="js/indicadorDeDuración.js"></script>
+    <script src="js/indicadorTiempoTranscurrido.js"></script>
+    <script src="js/infoEmergTiempoTranscurrido.js"></script>
+    <script src="js/stop.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/resaltadoCanciónEnCurso.js"></script>
+    <script src="js/setearBarraDeProgreso.js"></script>
+    <script src="js/stop.js"></script>
+    <script src="js/volume.js"></script>
+  </body>
+</html>
