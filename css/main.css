@@ -1,0 +1,242 @@
+::-webkit-scrollbar {
+    display: none;
+}
+.body {
+    max-height: 700px;
+    min-width: 400px;
+   font-family: sans-serif;
+   background-color: rgb(231, 206, 172);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+/*Player*/
+.player {
+    
+    max-height: 700px;
+    min-width: 400px;
+    background-image: (rgb(9, 19, 83),);
+    border-radius: 0.5rem;
+    border-style:double;
+    border-width: 2px;
+    margin-top: 0px;
+    
+padding-top: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1.1rem;
+    color: rgb(150, 150, 150);
+    
+    
+}
+/*Title*/
+.titulo-section{
+    max-width: 400px;
+    overflow: hidden;
+}
+.title {
+    color: rgb(250, 248, 228);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative; 
+    left: 0px; 
+    top: 0px;
+    max-width: 400px;
+}
+/*Cover*/
+.cover {
+    
+    border-radius: 0.2rem;
+    width: 370px;
+    height: 300px;
+
+    margin-bottom: 35px;
+    margin-top: 15px;
+    
+    margin-left: 12px;
+    
+}
+/*Progress*/
+.progress-container {
+    background-color: rgb(250, 248, 228);
+    height: 5px;
+    margin: 13px;
+    border-radius: 1rem;
+    width: 340px;
+    margin-left: 28px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+.time-info {
+    visibility: hidden;
+    position: fixed;
+    color: beige;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.progress-container:hover .time-info{
+    visibility: visible;
+}
+.progress {
+    position: relative;
+    top: 0px;
+    background-color: rgb(248, 238, 222);;
+    width: 0%;
+    height: 5px;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgb(216, 89, 112), rgb(185, 40, 66));
+
+}
+.progress-seg{
+    visibility: visible;
+    color: rgb(248, 238, 222);
+    font-size:11px;
+    font-weight: bolder;
+    position: absolute;
+    top:370px;
+    left: 40px;
+}
+.audio-duration{
+    visibility: visible;
+    color: rgb(248, 238, 222);
+    font-size:11px;
+    font-weight: bolder;
+    position: absolute;
+    top:370px;
+    left: 380px;
+}
+.hidden-duration {
+    visibility: hidden;
+    color: rgb(248, 238, 222);
+    font-size:13px;
+    font-weight: bolder;
+    position: absolute;
+    top:459px;
+    left: 3px;
+}
+.hidden-current {
+    visibility: hidden;
+    color: rgb(248, 238, 222);
+    font-size:13px;
+    font-weight: bolder;
+    position: absolute;
+    top:459px;
+    left: 393px;
+}
+.hidden-info {
+    visibility: hidden;
+    position: fixed;
+    color: beige;
+    border-radius: 4px;
+    font-size: 0.89rem;
+}
+
+/*Controls*/
+
+.controls {
+    display: flex;
+    max-width: 390px;
+    max-height: 50px;  
+    margin-bottom: 20px;  
+
+    
+}
+
+.controls button {
+    visibility: hidden;
+    min-width: 45px;
+    height: 35px;
+    background-color: rgb(28, 28, 99);
+    /* background-image: linear-gradient(rgb(218, 93, 116), rgb(185, 40, 66),rgb(148, 32, 53)); */
+    border-radius: 6px;
+    border: none;
+    margin-right: 27px;
+    margin-left: 27px;
+    margin-bottom: 0rem;
+}
+.controls i {
+    visibility: visible;
+    color: rgb(248, 238, 222);
+    
+}
+/*Song*/
+.songs {
+    margin-left: 15px;
+    padding: 0;
+    list-style: none;
+}
+.songs li {
+    margin-bottom: 1rem;
+}
+.songs a {
+    color: rgb(194, 193, 180);
+    text-decoration: none;
+}
+
+.songs a.active {
+   color: rgb(250, 248, 228);
+   font-weight: bold;
+}
+
+/*volumen*/
+.volume-icon {
+    visibility: hidden;
+    position: absolute;
+    top:40px;
+    left: 35px;
+    z-index: 100;
+    height: 23px;
+    width: 23px;
+    color: rgb(248, 238, 222);
+}
+.volume-icon i{
+    visibility: visible;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    color: rgb(248, 238, 222);
+    position: relative;
+    top:0px;
+    left: -5px;
+    z-index: 100;
+}
+
+.volume-container{
+    visibility: hidden;
+    height: 20px;
+    width: 180px;
+    border-radius: 5px;
+    position: absolute;
+    top:43px;
+    left: 35px;
+}
+
+#volume-slider{
+    position: relative;
+    background-color: rgb(139, 139, 139);
+    height: 5px;
+    width: 50%;
+    border-radius: 2px;
+    top: 0px;
+    left: 0px;
+}
+
+.slider-cont{
+    background-color: rgb(187, 187, 187);
+    height: 5px;
+    width: 150px;
+    border-radius: 2px;
+    position: relative;
+    top: 7px;
+    left: 25px;
+}
+
+
+
+
